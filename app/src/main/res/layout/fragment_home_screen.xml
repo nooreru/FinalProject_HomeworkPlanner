@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreenFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_title_text"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <Button
+        android:id="@+id/assignments_page_button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/assignments_page_text"
+        app:layout_constraintBottom_toTopOf="@+id/add_assignment_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_title"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <Button
+        android:id="@+id/past_assignments_button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/past_assignments_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/assignments_page_button"
+        app:layout_constraintStart_toStartOf="@+id/assignments_page_button"
+        app:layout_constraintTop_toBottomOf="@+id/add_assignment_button" />
+
+    <Button
+        android:id="@+id/add_assignment_button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/add_assignment_text"
+        app:layout_constraintBottom_toTopOf="@+id/past_assignments_button"
+        app:layout_constraintEnd_toEndOf="@+id/assignments_page_button"
+        app:layout_constraintStart_toStartOf="@+id/assignments_page_button"
+        app:layout_constraintTop_toBottomOf="@+id/assignments_page_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
