@@ -10,6 +10,10 @@ import com.example.finalproject_homeworkplanner.databinding.FragmentAddAssignmen
 class AddAssignmentFragment : Fragment() {
     private var _binding: FragmentAddAssignmentBinding? = null
     private val binding get() = _binding!!
+    /*var listOfAssignments = listOf(Assignment("course name", "assignment name", 1, R.drawable.patty_bae),
+        Assignment("course name", "assignment name", 1, R.drawable.patty_bae),
+        Assignment("course name", "assignment name", 1, R.drawable.patty_bae))*/
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

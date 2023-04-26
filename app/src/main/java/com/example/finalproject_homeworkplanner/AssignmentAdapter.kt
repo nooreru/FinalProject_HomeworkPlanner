@@ -1,6 +1,23 @@
 package com.example.finalproject_homeworkplanner
 
+import android.view.LayoutInflater
+import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.finalproject_homeworkplanner.databinding.AssignmentPageItemListLayoutBinding
 
-class AssignmentAdapter (val assignmentList: List<Assignment>)/* : RecyclerView.Adapter*/ {
+class AssignmentAdapter (val assignmentList: List<Assignment>) : RecyclerView.Adapter<AssignmentViewHolder>() {
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AssignmentViewHolder {
+        val binding = AssignmentPageItemListLayoutBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return AssignmentViewHolder(binding)
+    }
+
+    override fun onBindViewHolder(holder: AssignmentViewHolder, position: Int) {
+        val currentAssignment = assignmentList[position]
+        holder.bindAssignment(currentAssignment)
+    }
+
+    override fun getItemCount(): Int {
+        return assignmentList.size
+    }
 }
