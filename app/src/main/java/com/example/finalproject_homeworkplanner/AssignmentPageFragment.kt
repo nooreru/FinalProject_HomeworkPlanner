@@ -11,7 +11,7 @@ import com.example.finalproject_homeworkplanner.databinding.FragmentAssignmentPa
 class AssignmentPageFragment : Fragment() {
     private var _binding: FragmentAssignmentPageBinding? = null
     private val binding get() = _binding!!
-    var listOfAssignments = listOf(Assignment("course name", "assignment name", 1, R.drawable.patty_bae),
+    var listOfAssignments = listOf(Assignment("course name", "assignment name", 1, R.drawable.default_image),
         Assignment("course name", "assignment name", 1, R.drawable.default_image),
         Assignment("course name", "assignment name", 1, R.drawable.default_image))
     override fun onCreateView(

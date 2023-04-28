@@ -13,10 +13,26 @@
         <action
             android:id="@+id/action_homeScreenFragment_to_assignmentPageFragment"
             app:destination="@id/assignmentPageFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment_to_addAssignmentFragment"
+            app:destination="@id/addAssignmentFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment_to_pastAssignmentPageFragment"
+            app:destination="@id/pastAssignmentPageFragment" />
     </fragment>
     <fragment
         android:id="@+id/assignmentPageFragment"
         android:name="com.example.finalproject_homeworkplanner.AssignmentPageFragment"
         android:label="fragment_assignment_page"
         tools:layout="@layout/fragment_assignment_page" />
+    <fragment
+        android:id="@+id/addAssignmentFragment"
+        android:name="com.example.finalproject_homeworkplanner.AddAssignmentFragment"
+        android:label="fragment_add_assignment"
+        tools:layout="@layout/fragment_add_assignment" />
+    <fragment
+        android:id="@+id/pastAssignmentPageFragment"
+        android:name="com.example.finalproject_homeworkplanner.PastAssignmentPageFragment"
+        android:label="fragment_past_assignment_page"
+        tools:layout="@layout/fragment_past_assignment_page" />
 </navigation>
