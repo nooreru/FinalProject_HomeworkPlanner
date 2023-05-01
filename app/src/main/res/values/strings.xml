@@ -5,5 +5,5 @@
     <string name="app_title_text">Your Digital Planner</string>
     <string name="assignments_page_text">Assignments Page</string>
     <string name="add_assignment_text">Add Assignment</string>
-    <string name="past_assignments_text">View Past Assignments</string>
+    <string name="past_assignments_text">Past Assignments</string>
 </resources>

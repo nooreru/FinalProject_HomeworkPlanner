@@ -7,6 +7,10 @@
     android:id="@+id/assignment_page_fragment"
     tools:context=".AssignmentPageFragment">
 
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88AB75"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"

@@ -6,13 +6,75 @@
     android:layout_height="match_parent"
     tools:context=".HomeScreenFragment">
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88AB75"
+        tools:layout_editor_absoluteX="-80dp"
+        tools:layout_editor_absoluteY="-16dp"></FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/flower"
+        app:layout_constraintBottom_toBottomOf="@+id/assignments_page_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/assignments_page_button" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/flower"
+        app:layout_constraintBottom_toBottomOf="@+id/assignments_page_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/assignments_page_button" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/flower"
+        app:layout_constraintBottom_toBottomOf="@+id/past_assignments_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/past_assignments_button" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/flower"
+        app:layout_constraintBottom_toBottomOf="@+id/past_assignments_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/past_assignments_button" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/flower"
+        app:layout_constraintBottom_toBottomOf="@+id/add_assignment_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/add_assignment_button" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/flower"
+        app:layout_constraintBottom_toBottomOf="@+id/add_assignment_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/add_assignment_button" />
     <TextView
         android:id="@+id/app_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_title_text"
-        android:textSize="34sp"
-        app:drawableTint="#4A148C"
+        android:textColor="@color/white"
+        android:textSize="40sp"
         app:fontFamily="@font/courgette"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,7 +87,9 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:text="@string/assignments_page_text"
+        android:textSize="20sp"
         app:backgroundTint="#B71C1C"
+        app:fontFamily="@font/abel"
         app:layout_constraintBottom_toTopOf="@+id/add_assignment_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +101,9 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:text="@string/past_assignments_text"
+        android:textSize="20sp"
         app:backgroundTint="#F57F17"
+        app:fontFamily="@font/abel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/assignments_page_button"
         app:layout_constraintStart_toStartOf="@+id/assignments_page_button"
@@ -48,6 +114,8 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:text="@string/add_assignment_text"
+        android:textSize="20sp"
+        app:fontFamily="@font/abel"
         app:backgroundTint="#0D47A1"
         app:layout_constraintBottom_toTopOf="@+id/past_assignments_button"
         app:layout_constraintEnd_toEndOf="@+id/assignments_page_button"
