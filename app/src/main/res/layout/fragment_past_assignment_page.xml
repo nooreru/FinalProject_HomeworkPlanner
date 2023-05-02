@@ -15,7 +15,8 @@
         android:id="@+id/assignments_completed_count_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="You have soso many assignments completed"
+        android:layout_marginTop="16dp"
+        android:text="You have soso many assignments completed"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
