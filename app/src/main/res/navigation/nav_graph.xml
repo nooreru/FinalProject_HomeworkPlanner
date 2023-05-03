@@ -24,7 +24,11 @@
         android:id="@+id/assignmentPageFragment"
         android:name="com.example.finalproject_homeworkplanner.AssignmentPageFragment"
         android:label="fragment_assignment_page"
-        tools:layout="@layout/fragment_assignment_page" />
+        tools:layout="@layout/fragment_assignment_page" >
+        <action
+            android:id="@+id/action_assignmentPageFragment_to_assignmentDetailsFragment"
+            app:destination="@id/assignmentDetailsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/addAssignmentFragment"
         android:name="com.example.finalproject_homeworkplanner.AddAssignmentFragment"
@@ -35,4 +39,9 @@
         android:name="com.example.finalproject_homeworkplanner.PastAssignmentPageFragment"
         android:label="fragment_past_assignment_page"
         tools:layout="@layout/fragment_past_assignment_page" />
+    <fragment
+        android:id="@+id/assignmentDetailsFragment"
+        android:name="com.example.finalproject_homeworkplanner.AssignmentDetailsFragment"
+        android:label="fragment_assignment_details"
+        tools:layout="@layout/fragment_assignment_details" />
 </navigation>

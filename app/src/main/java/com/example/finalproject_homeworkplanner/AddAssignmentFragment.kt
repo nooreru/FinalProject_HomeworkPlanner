@@ -17,7 +17,9 @@ class AddAssignmentFragment : Fragment() {
         // Inflate the layout for this fragment
         _binding = FragmentAddAssignmentBinding.inflate(inflater, container, false)
         val rootView = binding.root
+        binding.setDueDate.setOnClickListener{
 
+        }
         return rootView
     }
 }
