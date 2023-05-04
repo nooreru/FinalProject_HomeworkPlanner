@@ -11,7 +11,7 @@ class AssignmentViewHolder (val binding: AssignmentPageItemListLayoutBinding):
     private val binding1 get() = _binding1!!
     init {
         binding.root.setOnClickListener{
-            val action = AssignmentPageFragmentDirections.actionAssignmentPageFragmentToAssignmentDetailsFragment()
+
 
         }
     }
