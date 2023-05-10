@@ -21,7 +21,7 @@ class AssignmentPageFragment : Fragment() {
         // Inflate the layout for this fragment
         _binding = FragmentAssignmentPageBinding.inflate(inflater, container, false)
         val rootView = binding.root
-        val adapter = AssignmentAdapter(viewModel.listOfNotDoneAssignments)
+        val adapter = AssignmentAdapter(viewModel.listOfAssignments)
         binding.recyclerView.adapter = adapter
         return rootView
     }
