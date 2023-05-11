@@ -1,36 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="16dp"
     android:id="@+id/assignment_details"
     tools:context=".AssignmentDetailsFragment">
 
     <!-- layout not done lol-->
-    <TextView
-        android:id="@+id/assignment_course"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="COURSE" />
+
     <TextView
         android:id="@+id/assignment_title"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="TITLE"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TITLE"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:id="@+id/assignment_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COURSE"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/assignment_title"
+        app:layout_constraintTop_toBottomOf="@+id/assignment_title" />
+
     <TextView
         android:id="@+id/assignment_due_date"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="DUE DATE"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DUE DATE"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/assignment_course"
+        app:layout_constraintTop_toBottomOf="@+id/assignment_course" />
+
     <RadioGroup
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assignment_due_date">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:layout_margin="16dp">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Done"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
         <RadioButton
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not Done"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/radioButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/radioButton"
+            app:layout_constraintTop_toTopOf="@+id/radioButton" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </RadioGroup>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,11 +5,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.activityViewModels
 import com.example.finalproject_homeworkplanner.databinding.FragmentPastAssignmentPageBinding
 
 class PastAssignmentPageFragment : Fragment() {
 private var _binding: FragmentPastAssignmentPageBinding? = null
     private val binding get() = _binding!!
+    private val viewModel: AssignmentViewModel by activityViewModels()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -17,8 +19,7 @@ private var _binding: FragmentPastAssignmentPageBinding? = null
         // Inflate the layout for this fragment
         _binding = FragmentPastAssignmentPageBinding.inflate(inflater, container, false)
         val rootView = binding.root
-        val adapter = AssignmentAdapter(listOfAssignments)
-        //viewmodel add please and thank you
+        val adapter = AssignmentAdapter(viewModel.listOfAssignments)
         binding.recyclerView.adapter = adapter
         return rootView
     }
