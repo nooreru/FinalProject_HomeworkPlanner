@@ -11,7 +11,7 @@ class AssignmentAdapter (val assignmentList: List<Assignment>) : RecyclerView.Ad
         val binding = AssignmentPageItemListLayoutBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return AssignmentViewHolder(binding)
     }
-
+//navigation thingds from assigmet bojec tot aassigment deteails
     override fun onBindViewHolder(holder: AssignmentViewHolder, position: Int) {
         val currentAssignment = assignmentList[position]
         holder.bindAssignment(currentAssignment)
