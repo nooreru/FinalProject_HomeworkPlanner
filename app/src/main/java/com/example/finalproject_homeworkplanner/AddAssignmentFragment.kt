@@ -5,11 +5,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.fragment.app.activityViewModels
 import com.example.finalproject_homeworkplanner.databinding.FragmentAddAssignmentBinding
 
 class AddAssignmentFragment : Fragment() {
     private var _binding: FragmentAddAssignmentBinding? = null
     private val binding get() = _binding!!
+    private val viewModel: AssignmentViewModel by activityViewModels()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -17,8 +20,12 @@ class AddAssignmentFragment : Fragment() {
         // Inflate the layout for this fragment
         _binding = FragmentAddAssignmentBinding.inflate(inflater, container, false)
         val rootView = binding.root
-        binding.setDueDate.setOnClickListener{
-
+        /*binding.setDueDate.setOnClickListener{
+            calendar ui popup thingy
+        }*/
+        binding.addAssignmentToListButton.setOnClickListener{
+            viewModel.addAssignment(binding.assignmentCourse.text.toString(),
+                binding.assignmentTitle.text.toString(), 1, 1)
         }
         return rootView
     }

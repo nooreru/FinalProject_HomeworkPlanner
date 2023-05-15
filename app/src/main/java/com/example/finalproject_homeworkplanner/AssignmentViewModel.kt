@@ -9,12 +9,11 @@ class AssignmentViewModel : ViewModel() {
     val listOfAssignments: List<Assignment>
         get() = _listOfAssignments
 
-
-
-
     fun updateDone(doneStatus: Boolean, assignmentNum: Int){
         _listOfAssignments[assignmentNum].doneStatus = doneStatus
     }
 
-
+    fun addAssignment(aTitle: String, cTitle: String, aDate: Int, aPhoto: Int = 1){
+        _listOfAssignments.add(_listOfAssignments.size, Assignment(cTitle, aTitle, aDate, aPhoto))
+    }
 }
