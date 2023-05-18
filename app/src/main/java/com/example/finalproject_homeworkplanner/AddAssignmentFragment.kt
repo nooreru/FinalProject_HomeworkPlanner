@@ -24,8 +24,8 @@ class AddAssignmentFragment : Fragment() {
             calendar ui popup thingy
         }*/
         binding.addAssignmentToListButton.setOnClickListener{
-            viewModel.addAssignment(binding.assignmentCourse.text.toString(),
-                binding.assignmentTitle.text.toString(), 1, 1)
+            viewModel.addAssignment(binding.assignmentCourseEdit.text.toString(),
+                binding.assignmentTitleEdit.text.toString(), 1, R.drawable.default_image)
         }
         return rootView
     }

@@ -13,7 +13,7 @@ class AssignmentViewModel : ViewModel() {
         _listOfAssignments[assignmentNum].doneStatus = doneStatus
     }
 
-    fun addAssignment(aTitle: String, cTitle: String, aDate: Int, aPhoto: Int = 1){
-        _listOfAssignments.add(_listOfAssignments.size, Assignment(cTitle, aTitle, aDate, aPhoto))
+    fun addAssignment(aTitle: String, cTitle: String, aDate: Int, aPhoto: Int = R.drawable.default_image){
+        _listOfAssignments.add((Assignment(cTitle, aTitle, aDate, aPhoto)))
     }
 }
