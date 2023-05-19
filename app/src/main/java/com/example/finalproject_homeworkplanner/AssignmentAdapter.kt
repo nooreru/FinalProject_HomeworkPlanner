@@ -15,10 +15,6 @@ class AssignmentAdapter (val assignmentList: List<Assignment>) : RecyclerView.Ad
 //navigation thingds from assigmet bojec tot aassigment deteails
     override fun onBindViewHolder(holder: AssignmentViewHolder, position: Int) {
         val currentAssignment = assignmentList[position]
-        holder.itemView.setOnClickListener {
-
-        }
-
         holder.bindAssignment(currentAssignment)
     }
 

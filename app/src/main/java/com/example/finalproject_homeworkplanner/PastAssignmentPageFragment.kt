@@ -12,6 +12,7 @@ class PastAssignmentPageFragment : Fragment() {
 private var _binding: FragmentPastAssignmentPageBinding? = null
     private val binding get() = _binding!!
     private val viewModel: AssignmentViewModel by activityViewModels()
+    private val viewModelPast: PastAssignmentViewModel by activityViewModels()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -19,7 +20,7 @@ private var _binding: FragmentPastAssignmentPageBinding? = null
         // Inflate the layout for this fragment
         _binding = FragmentPastAssignmentPageBinding.inflate(inflater, container, false)
         val rootView = binding.root
-        val adapter = AssignmentAdapter(viewModel.listOfAssignments)
+        val adapter = AssignmentAdapter(viewModelPast.listOfAssignments)
         binding.recyclerView.adapter = adapter
         return rootView
     }

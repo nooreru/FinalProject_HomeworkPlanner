@@ -1,5 +1,6 @@
 package com.example.finalproject_homeworkplanner
 
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.finalproject_homeworkplanner.databinding.AssignmentPageItemListLayoutBinding
 import com.example.finalproject_homeworkplanner.databinding.FragmentAssignmentPageBinding
@@ -10,7 +11,8 @@ class AssignmentViewHolder (val binding: AssignmentPageItemListLayoutBinding):
 
     init {
         binding.root.setOnClickListener {
-
+            val action = AssignmentPageFragmentDirections.actionAssignmentPageFragmentToAssignmentDetailsFragment(currentAssignment)
+            binding.root.findNavController().navigate(action)
         }
     }
 
