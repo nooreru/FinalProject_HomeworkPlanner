@@ -47,7 +47,10 @@
         android:id="@+id/assignmentDetailsFragment"
         android:name="com.example.finalproject_homeworkplanner.AssignmentDetailsFragment"
         android:label="fragment_assignment_details"
-        tools:layout="@layout/fragment_assignment_details" >
-        <argument android:name="assignmentArg" />
-    </fragment>
+        tools:layout="@layout/fragment_assignment_details" />
+    <fragment
+        android:id="@+id/about_fragment"
+        android:name="com.example.finalproject_homeworkplanner.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
 </navigation>

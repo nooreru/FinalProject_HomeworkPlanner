@@ -1,9 +1,7 @@
 package com.example.finalproject_homeworkplanner
 
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import androidx.fragment.app.Fragment
 import com.example.finalproject_homeworkplanner.databinding.FragmentHomeScreenBinding
 import androidx.navigation.findNavController
@@ -32,6 +30,19 @@ class HomeScreenFragment : Fragment() {
             val action = HomeScreenFragmentDirections.actionHomeScreenFragmentToAddAssignmentFragment()
             rootView.findNavController().navigate(action)
         }
+
+        setHasOptionsMenu(true)
         return rootView
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        super.onCreateOptionsMenu(menu, inflater)
+        inflater.inflate(R.menu.options_menu, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return NavigationUI.onNavDestinationSelected(item, requireView().findNavController())
+                || super.onContextItemSelected(item)
+
     }
 }

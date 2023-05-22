@@ -9,6 +9,8 @@ class AssignmentViewModel : ViewModel() {
     val listOfAssignments: List<Assignment>
         get() = _listOfAssignments
 
+
+
     fun updateDone(doneStatus: Boolean, assignmentNum: Int){
         _listOfAssignments[assignmentNum].doneStatus = doneStatus
     }

@@ -11,7 +11,7 @@ class AssignmentViewHolder (val binding: AssignmentPageItemListLayoutBinding):
 
     init {
         binding.root.setOnClickListener {
-            val action = AssignmentPageFragmentDirections.actionAssignmentPageFragmentToAssignmentDetailsFragment(currentAssignment)
+            val action = AssignmentPageFragmentDirections.actionAssignmentPageFragmentToAssignmentDetailsFragment()
             binding.root.findNavController().navigate(action)
         }
     }

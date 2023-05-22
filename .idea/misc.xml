@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/Users/ruttyn24/AndroidStudioProjects/FinalProject_HomeworkPlanner/app/src/main/res/layout/activity_main.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/ruttyn24/AndroidStudioProjects/FinalProject_HomeworkPlanner/app/src/main/res/layout/assignment_page_item_list_layout.xml" value="0.26875" />
+        <entry key="..\:/Users/ruttyn24/AndroidStudioProjects/FinalProject_HomeworkPlanner/app/src/main/res/layout/fragment_about.xml" value="0.26871794871794874" />
         <entry key="..\:/Users/ruttyn24/AndroidStudioProjects/FinalProject_HomeworkPlanner/app/src/main/res/layout/fragment_add_assignment.xml" value="0.25" />
         <entry key="..\:/Users/ruttyn24/AndroidStudioProjects/FinalProject_HomeworkPlanner/app/src/main/res/layout/fragment_assignment_details.xml" value="0.26461538461538464" />
         <entry key="..\:/Users/ruttyn24/AndroidStudioProjects/FinalProject_HomeworkPlanner/app/src/main/res/layout/fragment_assignment_page.xml" value="0.25885416666666666" />
@@ -14,6 +15,7 @@
         <entry key="..\:/Users/ruttyn24/AndroidStudioProjects/FinalProject_HomeworkPlanner/app/src/main/res/layout/fragment_past_assignment_page.xml" value="0.25" />
         <entry key="..\:/Users/ruttyn24/AndroidStudioProjects/FinalProject_HomeworkPlanner/app/src/main/res/layout/item_list_layout.xml" value="0.33" />
         <entry key="..\:/Users/ruttyn24/AndroidStudioProjects/FinalProject_HomeworkPlanner/app/src/main/res/layout/past_assignment_item_list_layout.xml" value="0.271875" />
+        <entry key="..\:/Users/ruttyn24/AndroidStudioProjects/FinalProject_HomeworkPlanner/app/src/main/res/menu/options_menu.xml" value="0.1" />
       </map>
     </option>
   </component>
