@@ -6,4 +6,5 @@
     <string name="assignments_page_text">Assignments Page</string>
     <string name="add_assignment_text">Add Assignment</string>
     <string name="past_assignments_text">Past Assignments</string>
+    <string name="assignment_added">Assignment Added!</string>
 </resources>
