@@ -5,8 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.DatePicker
 import android.widget.Toast
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.findNavController
 import com.example.finalproject_homeworkplanner.databinding.FragmentAddAssignmentBinding
 
 class AddAssignmentFragment : Fragment() {
@@ -20,9 +22,9 @@ class AddAssignmentFragment : Fragment() {
         // Inflate the layout for this fragment
         _binding = FragmentAddAssignmentBinding.inflate(inflater, container, false)
         val rootView = binding.root
-        /*binding.setDueDate.setOnClickListener{
-            calendar ui popup thingy
-        }*/
+        binding.setDueDate.setOnClickListener{
+            rootView.findNavController().navigate(AddAssignmentFragmentDirections.actionAddAssignmentFragmentToDateDialogFragment())
+        }
         binding.addAssignmentToListButton.setOnClickListener{
             viewModel.addAssignment(binding.assignmentCourseEdit.text.toString(), binding.assignmentTitleEdit.text.toString(), 1, R.drawable.default_image)
             Toast.makeText(getActivity(), R.string.assignment_added, Toast.LENGTH_SHORT).show()
