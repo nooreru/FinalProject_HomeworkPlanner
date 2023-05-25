@@ -20,8 +20,10 @@ private var _binding: FragmentPastAssignmentPageBinding? = null
         // Inflate the layout for this fragment
         _binding = FragmentPastAssignmentPageBinding.inflate(inflater, container, false)
         val rootView = binding.root
-        val adapter = AssignmentAdapter(viewModelPast.listOfAssignments)
-        binding.recyclerView.adapter = adapter
+
+        val adapter = PastAssignmentAdapter(viewModelPast.listOfAssignments)
+        binding.recyclerView2.adapter = adapter
+
         return rootView
     }
 }

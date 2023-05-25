@@ -10,6 +10,7 @@ import android.widget.Toast
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.findNavController
 import com.example.finalproject_homeworkplanner.databinding.FragmentAddAssignmentBinding
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class AddAssignmentFragment : Fragment() {
     private var _binding: FragmentAddAssignmentBinding? = null
@@ -23,7 +24,10 @@ class AddAssignmentFragment : Fragment() {
         _binding = FragmentAddAssignmentBinding.inflate(inflater, container, false)
         val rootView = binding.root
         binding.setDueDate.setOnClickListener{
-            rootView.findNavController().navigate(AddAssignmentFragmentDirections.actionAddAssignmentFragmentToDateDialogFragment())
+            /*rootView.findNavController().navigate(AddAssignmentFragmentDirections.actionAddAssignmentFragmentToDateDialogFragment())*/
+            /*var datePicker = DateDialogFragment()
+            datePicker.show(supportFragmentManager, )*/
+
         }
         binding.addAssignmentToListButton.setOnClickListener{
             viewModel.addAssignment(binding.assignmentCourseEdit.text.toString(), binding.assignmentTitleEdit.text.toString(), 1, R.drawable.default_image)
