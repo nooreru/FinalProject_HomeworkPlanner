@@ -59,6 +59,6 @@
         tools:layout="@layout/fragment_about" />
     <dialog
         android:id="@+id/dateDialogFragment"
-        android:name="com.example.finalproject_homeworkplanner.DateDialogFragment"
+        android:name="com.example.finalproject_homeworkplanner.DatePickerFragment"
         android:label="DateDialogFragment" />
 </navigation>
