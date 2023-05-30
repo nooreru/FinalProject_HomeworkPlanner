@@ -19,7 +19,7 @@ class AssignmentViewHolder (val binding: AssignmentPageItemListLayoutBinding):
         fun bindAssignment(assignment: Assignment){
             currentAssignment = assignment
             binding.assignmentCourse.text = currentAssignment.assignmentCourse
-            binding.assignmentDueDate.text = currentAssignment.assignmentDueDate.toString()
+            binding.assignmentDueDate.text = "${currentAssignment.assignmentDueDate[1]} - ${currentAssignment.assignmentDueDate[0]} - ${currentAssignment.assignmentDueDate[2]}"
             binding.assignmentTitle.text = currentAssignment.assignmentName
             binding.assignmentImage.setImageResource(currentAssignment.assignmentImage)
         }
