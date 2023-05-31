@@ -8,10 +8,7 @@ class PastAssignmentViewHolder(val binding: PastAssignmentItemListLayoutBinding)
     private  lateinit var  currentPastAssignment: Assignment
 
     init {
-        binding.root.setOnClickListener {
-            val action = PastAssignmentPageFragmentDirections.actionPastAssignmentPageFragmentToAssignmentDetailsFragment()
-            binding.root.findNavController().navigate(action)
-        }
+
     }
 
     fun bindAssignment(assignment: Assignment){
