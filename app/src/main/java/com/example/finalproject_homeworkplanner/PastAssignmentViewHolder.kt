@@ -15,7 +15,7 @@ class PastAssignmentViewHolder(val binding: PastAssignmentItemListLayoutBinding)
         currentPastAssignment = assignment
         binding.pastAssignmentCourse.text = currentPastAssignment.assignmentCourse
         binding.pastAssignmentTitle.text = currentPastAssignment.assignmentName
-        binding.pastAssignmentDueDate.text = currentPastAssignment.assignmentDueDate.toString()
+        binding.pastAssignmentDueDate.text = "${currentPastAssignment.assignmentDueDate[1]} - ${currentPastAssignment.assignmentDueDate[0]} - ${currentPastAssignment.assignmentDueDate[2]}"
         binding.pastAssignmentImage.setImageResource(currentPastAssignment.assignmentImage)
 
     }

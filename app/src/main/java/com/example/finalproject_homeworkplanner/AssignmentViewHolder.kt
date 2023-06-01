@@ -12,17 +12,21 @@ class AssignmentViewHolder (val binding: AssignmentPageItemListLayoutBinding):
     RecyclerView.ViewHolder(binding.root) {
     private lateinit var currentAssignment: Assignment
 
-    init {
-       /* binding.root.setOnClickListener{
-            MaterialAlertDialogBuilder(requireContext())
+    /*init {
+        binding.root.setOnClickListener{ view ->
+            MaterialAlertDialogBuilder(view.context)
                 .setTitle("Finished with this assignment?")
                 .setMessage("")
+                .setIcon(R.drawable.flower)
                 .setPositiveButton("Yep!"){ dialog, which ->
-
+                    currentAssignment.doneStatus = true
+                }
+                .setNegativeButton("Nope!"){ dialog, which ->
+                    currentAssignment.doneStatus = false
                 }
                 .show()
-        }*/
-    }
+        }
+    }*/
 
         fun bindAssignment(assignment: Assignment){
             currentAssignment = assignment
