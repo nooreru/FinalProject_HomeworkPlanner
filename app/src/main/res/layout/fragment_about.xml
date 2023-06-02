@@ -28,6 +28,7 @@
         app:layout_constraintVertical_bias=".35" />
 
     <ImageView
+        android:id="@+id/topFlower"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/textView"
@@ -40,14 +41,12 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
         android:textSize="20sp"
         app:fontFamily="@font/abel"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@id/textView"
         app:layout_constraintVertical_bias=".25"
         tools:text="fkghlkdfg;aergsdlkk,n oijdgl g lfsldg oeij u598u 45ote;rkldg eio5 ;j5oer;hdnfkxc e5yieuhdkljfnc, eao5aiuehkdnzf e5teirzdkf ;aiudfgk aduhaie hg kfzx dzk uiy3xc,m mcjkfir ydeuil5 ldgflkdfhg lkdhg lidgkxkdf" />
 
