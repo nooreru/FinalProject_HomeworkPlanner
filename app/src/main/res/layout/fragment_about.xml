@@ -51,6 +51,7 @@
         tools:text="fkghlkdfg;aergsdlkk,n oijdgl g lfsldg oeij u598u 45ote;rkldg eio5 ;j5oer;hdnfkxc e5yieuhdkljfnc, eao5aiuehkdnzf e5teirzdkf ;aiudfgk aduhaie hg kfzx dzk uiy3xc,m mcjkfir ydeuil5 ldgflkdfhg lkdhg lidgkxkdf" />
 
     <ImageView
+        android:id="@+id/bottomFlower"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/flower"

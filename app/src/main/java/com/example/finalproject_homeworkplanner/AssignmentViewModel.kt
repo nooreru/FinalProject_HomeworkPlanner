@@ -9,6 +9,12 @@ class AssignmentViewModel : ViewModel() {
     val listOfAssignments: List<Assignment>
         get() = _listOfAssignments
 
+    private var _listOfPastAssignments = mutableListOf(Assignment("course name", "assignment name", arrayOf(1,1,1), R.drawable.default_image),
+        Assignment("course name", "assignment name", arrayOf(1,1,1), R.drawable.default_image),
+        Assignment("course name", "assignment name", arrayOf(1,1,1), R.drawable.default_image))
+    val listOfPastAssignments: List<Assignment>
+        get() = _listOfPastAssignments
+
 
 
     fun updateDone(doneStatus: Boolean, assignmentNum: Int){

@@ -50,6 +50,34 @@ class AboutFragment : Fragment() {
                 .show()
         }
 
+        binding.bottomFlower.setOnClickListener{
+            /*val bookUri = Uri.parse(currentBook.url)
+            val websiteIntent = Intent(Intent.ACTION_VIEW, bookUri)
+            itemView.context.startActivity(websiteIntent)*/
+
+            /*MaterialAlertDialogBuilder(requireContext())
+                    .setTitle(getString(R.string.congrats))
+                    .setMessage(getString(R.string.play_again))
+                    .setPositiveButton(getString(R.string.yes)){ dialog, which ->
+                        viewModel.playAgain()
+                    }
+                    .setNegativeButton(getString(R.string.no)){ dialog, which ->
+                        val action = MainFragmentDirections.actionMainFragmentToGameWonFragment()
+                        rootView.findNavController().navigate(action)
+                    }
+                    .show()*/
+
+            MaterialAlertDialogBuilder(requireContext())
+                .setTitle("Do you want some cool study tips?")
+                .setMessage("Click yes to learn more!")
+                .setPositiveButton("Yes"){ dialog, which ->
+                    val uri = Uri.parse("https://summer.harvard.edu/blog/top-10-study-tips-to-study-like-a-harvard-student/")
+                    val websiteIntent = Intent(Intent.ACTION_VIEW, uri)
+                    it.context.startActivity(websiteIntent)
+                }
+                .show()
+        }
+
         return rootView
     }
 }

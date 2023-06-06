@@ -12,9 +12,9 @@ class AssignmentViewHolder (val binding: AssignmentPageItemListLayoutBinding):
     RecyclerView.ViewHolder(binding.root) {
     private lateinit var currentAssignment: Assignment
 
-    /*init {
-        binding.root.setOnClickListener{ view ->
-            MaterialAlertDialogBuilder(view.context)
+    init {
+        binding.root.setOnClickListener{
+            /*MaterialAlertDialogBuilder(view.context)
                 .setTitle("Finished with this assignment?")
                 .setMessage("")
                 .setIcon(R.drawable.flower)
@@ -24,9 +24,13 @@ class AssignmentViewHolder (val binding: AssignmentPageItemListLayoutBinding):
                 .setNegativeButton("Nope!"){ dialog, which ->
                     currentAssignment.doneStatus = false
                 }
-                .show()
+                .show()*/
+            val action = AssignmentPageFragmentDirections.actionAssignmentPageFragmentToAssignmentDetailsFragment(true)
+            it.findNavController().navigate(action)
         }
-    }*/
+//can you use current assignment outside of viewholder
+
+    }
 
         fun bindAssignment(assignment: Assignment){
             currentAssignment = assignment

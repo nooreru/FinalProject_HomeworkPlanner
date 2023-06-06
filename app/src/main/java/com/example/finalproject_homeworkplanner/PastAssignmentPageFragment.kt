@@ -11,7 +11,7 @@ import com.example.finalproject_homeworkplanner.databinding.FragmentPastAssignme
 class PastAssignmentPageFragment : Fragment() {
 private var _binding: FragmentPastAssignmentPageBinding? = null
     private val binding get() = _binding!!
-    private val viewModelPast: PastAssignmentViewModel by activityViewModels()
+    private val viewModel: AssignmentViewModel by activityViewModels()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -20,7 +20,7 @@ private var _binding: FragmentPastAssignmentPageBinding? = null
         _binding = FragmentPastAssignmentPageBinding.inflate(inflater, container, false)
         val rootView = binding.root
 
-        val adapter = PastAssignmentAdapter(viewModelPast.listOfAssignments)
+        val adapter = PastAssignmentAdapter(viewModel.listOfPastAssignments)
         binding.recyclerView2.adapter = adapter
 
         return rootView

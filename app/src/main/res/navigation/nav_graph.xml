@@ -53,6 +53,8 @@
         android:name="com.example.finalproject_homeworkplanner.AssignmentDetailsFragment"
         android:label="fragment_assignment_details"
         tools:layout="@layout/fragment_assignment_details" >
-        <argument android:name="assignmentArg" />
+        <argument
+            android:name="currOrPastArg"
+            app:argType="boolean" />
     </fragment>
 </navigation>
