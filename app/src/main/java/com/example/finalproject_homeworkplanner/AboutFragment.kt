@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import com.example.finalproject_homeworkplanner.databinding.FragmentAboutBinding
 import com.example.finalproject_homeworkplanner.databinding.FragmentAssignmentDetailsBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -74,6 +75,10 @@ class AboutFragment : Fragment() {
                     val uri = Uri.parse("https://summer.harvard.edu/blog/top-10-study-tips-to-study-like-a-harvard-student/")
                     val websiteIntent = Intent(Intent.ACTION_VIEW, uri)
                     it.context.startActivity(websiteIntent)
+                }
+                .setNegativeButton("No thanks"){ dialog, which ->
+                    val action = AboutFragmentDirections.actionAboutFragmentToScaryPhotoFragment()
+                    it.findNavController().navigate(action)
                 }
                 .show()
         }

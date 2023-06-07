@@ -34,7 +34,7 @@ class AddAssignmentFragment : Fragment() {
         calendarView = binding.calendar
         calendarView.setOnDateChangeListener(
             OnDateChangeListener{ view, year, month, dayOfMonth ->
-                date = arrayOf(dayOfMonth, month, year)
+                date = arrayOf(dayOfMonth, month+1, year)
             }
         )
 

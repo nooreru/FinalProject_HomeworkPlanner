@@ -22,10 +22,7 @@ class HomeScreenFragment : Fragment() {
             val action = HomeScreenFragmentDirections.actionHomeScreenFragmentToAssignmentPageFragment()
             rootView.findNavController().navigate(action)
         }
-        binding.pastAssignmentsButton.setOnClickListener{
-            val action = HomeScreenFragmentDirections.actionHomeScreenFragmentToPastAssignmentPageFragment()
-            rootView.findNavController().navigate(action)
-        }
+
         binding.addAssignmentButton.setOnClickListener{
             val action = HomeScreenFragmentDirections.actionHomeScreenFragmentToAddAssignmentFragment()
             rootView.findNavController().navigate(action)

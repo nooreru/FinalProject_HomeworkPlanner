@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import com.example.finalproject_homeworkplanner.databinding.FragmentAssignmentPageBinding
 import androidx.fragment.app.viewModels
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 
 class AssignmentPageFragment : Fragment() {
@@ -23,6 +24,9 @@ class AssignmentPageFragment : Fragment() {
         val rootView = binding.root
         val adapter = AssignmentAdapter(viewModel.listOfAssignments)
         binding.recyclerView.adapter = adapter
+
+
+
         return rootView
     }
 }

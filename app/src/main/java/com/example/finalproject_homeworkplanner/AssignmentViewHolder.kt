@@ -14,19 +14,23 @@ class AssignmentViewHolder (val binding: AssignmentPageItemListLayoutBinding):
 
     init {
         binding.root.setOnClickListener{
-            /*MaterialAlertDialogBuilder(view.context)
-                .setTitle("Finished with this assignment?")
-                .setMessage("")
+            MaterialAlertDialogBuilder(it.context)
+                .setTitle("This assignment is currently...")
+                .setMessage("${if (currentAssignment.doneStatus.value == true)
+                    "DONE\nyayyyy!"
+                    else
+                    "NOT DONE :("
+                }")
                 .setIcon(R.drawable.flower)
-                .setPositiveButton("Yep!"){ dialog, which ->
-                    currentAssignment.doneStatus = true
+                .setPositiveButton("I'm done!"){ dialog, which ->
+                    currentAssignment.doneStatus.setValue(true)
                 }
-                .setNegativeButton("Nope!"){ dialog, which ->
-                    currentAssignment.doneStatus = false
+                .setNegativeButton("Still working on it..."){ dialog, which ->
+                    currentAssignment.doneStatus.setValue(false)
                 }
-                .show()*/
-            val action = AssignmentPageFragmentDirections.actionAssignmentPageFragmentToAssignmentDetailsFragment(true)
-            it.findNavController().navigate(action)
+                .show()
+            /*val action = AssignmentPageFragmentDirections.actionAssignmentPageFragmentToAssignmentDetailsFragment(true)
+            it.findNavController().navigate(action)*/
         }
 //can you use current assignment outside of viewholder
 

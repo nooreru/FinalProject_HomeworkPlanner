@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "162905702878",
+    "firebase_url": "https://homeworkplannerfinalproject-default-rtdb.firebaseio.com",
+    "project_id": "homeworkplannerfinalproject",
+    "storage_bucket": "homeworkplannerfinalproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162905702878:android:a2ddccde3cf8f9ebac9d4f",
+        "android_client_info": {
+          "package_name": "com.example.finalproject_homeworkplanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "162905702878-7c9it301jvn7geij6t41pv68vrvkhfla.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkpWFFj_e09ygEvTbkOqJ7S2hAYxdYD54"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "162905702878-7c9it301jvn7geij6t41pv68vrvkhfla.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
